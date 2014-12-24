@@ -1,13 +1,13 @@
 /*store this in a public directory*/
 
 h1 {
-  font-size: 16px;
+  font-size: 50px;
 }
 
 
 p {
-  font-size: 50px;
-  color: red;
+  font-size: 16px;
+  color: blue;
   font-style: underline;
   font-family: sans-serif;
 }
