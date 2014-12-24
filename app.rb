@@ -14,19 +14,20 @@ get '/submit' do
   erb :submit
 end
 
-
-#testing routes/logic not for production
-get '/hello/:name/' do
-  "hello there #{params[:name].upcase} "
+post '/submit' do
+  "You said '#{params[:mantra]}'"
 end
 
-get '/hello/:name/:city' do
-  "hello there #{params[:name].upcase} from #{params[:city].upcase}"
+get '/secret' do
+  erb :secret
 end
 
-# no idea how this works, but references the splat argument
-# so if more than one thing is passed from the url, it can hold all of them via the '*' wildcard
-get '/more/*' do
-  params[:splat]
+post '/secret' do
+  "Your secret coded message is '#{params[:secret].reverse.upcase}'"
 end
-#
+
+get '/decrypt/:secret' do
+  params[:secret].reverse.downcase
+end
+
+#need to pass the secret message to the params hash in the last example above

@@ -7,14 +7,12 @@
   <body>
     <h1><%= @title %></h1>
     <p>Have you overcome a comparative attack?  Share your guiding mantra below</p>
-    <form action="submit" method="post">
-      <label for="POST-name">Name:</label>
-      <input id="POST-name" type="text" name="name">
-      <input type="submit" value="Save">
+    <form action="/submit" method="post">
+          Enter your Mantra
+      <input type="text" name="mantra">
+<!--       this is where i'm getting the name of params value [:mantra] -->
+      <input type="submit">
     </form>
-<!--     refactor the above form stuff until you understand what it is doing -->
-
-
 
   </body>
 </html>

@@ -1,7 +1,23 @@
 /*store this in a public directory*/
 
+html {
+
+}
+
+body {
+  background: url(http://i.imgur.com/5J6EmCg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* put the background image in a container that is fixed */
+
+
 h1 {
   font-size: 50px;
+  font-family: sans-serif;
 }
 
 
