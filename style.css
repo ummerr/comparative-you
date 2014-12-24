@@ -1,0 +1,13 @@
+/*remember to store your sinatra css files in a 'public' directory at the root of your folder*/
+
+h1 {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+
+p {
+  font-size: 50px;
+  color: red;
+}
+
