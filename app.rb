@@ -10,6 +10,10 @@ get '/about' do
   erb :about
 end
 
+get '/submit' do
+  erb :submit
+end
+
 
 #testing routes/logic not for production
 get '/hello/:name/' do
