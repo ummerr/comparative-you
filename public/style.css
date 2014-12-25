@@ -5,19 +5,38 @@ html {
 }
 
 body {
+  width: 100%;
+
+}
+
+/* put the background image in a container that is fixed */
+
+.image-container {
   background: url(http://i.imgur.com/5J6EmCg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 568px;
 }
 
-/* put the background image in a container that is fixed */
-
+.quote-container {
+  text-align: center;
+  top: 50%;
+}
 
 h1 {
   font-size: 50px;
   font-family: sans-serif;
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 26px;
 }
 
 
