@@ -16,3 +16,9 @@
 #purpose
 *solidify competency in HTML, CSS and basic JS and Sinatra
 *build something for fuck's sake
+
+
+##Update 12/26
+
+#make the center text dynamic.
+#make the image dynamic.
