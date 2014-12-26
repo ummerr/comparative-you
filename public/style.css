@@ -1,19 +1,12 @@
 /*store this in a public directory*/
 
-html {
-  width: 100%;
-}
 
 * {
    border: 1px dotted red !important;
 }
 
-body {
-  width: 100%;
-}
 
-
-/* put the background image in a container that is fixed */
+/* put the background image in a container that is fixed if you put it in the body it's not a bad back-up */
 
 nav {
   text-align: right;
@@ -28,13 +21,11 @@ nav li {
 }
 
 .image-container {
-  background: url(http://i.imgur.com/5J6EmCg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  position: fixed;
   height: 43em;
   position: relative;
+  width: 100%;
+  z-index: 0;
 }
 
 .quote-container {
