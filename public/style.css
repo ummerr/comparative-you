@@ -305,7 +305,7 @@ a.pure-button-primary {
 .faq-container {
     display: block;
     position: relative;
-    top: 5em;
+    top: 4em;
 }
 
 .faq {
@@ -314,7 +314,7 @@ a.pure-button-primary {
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: 10px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -323,10 +323,47 @@ a.pure-button-primary {
 .faq-head {
     font-size: 48px;
     font-weight: bold;
-    color: black;
+    color: #1f8dd6;
     border: 3px solid white;
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
+}
+
+
+/*
+ -- STYLES FOR SUBMIT PAGE
+*/
+
+.submit-container {
+    display: block;
+    position: relative;
+    top: 5em;
+}
+
+.submit {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 10px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.submit-head {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f8dd6;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1.5em;
+}
+
+.submit-mantra {
+    width: 50%;
+    margin: 0 auto;
 }

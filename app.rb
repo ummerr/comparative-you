@@ -1,5 +1,18 @@
 require 'sinatra'
+# require 'data_mapper'
 #shotgun sends this to port 9393
+
+
+# DataMapper skeleton code.  Read more!
+# DataMapper::setup(:default, "sqllite3://#{Dir.pwd}/recall.db")
+
+# class Mantra
+#   include DataMapper::Resource
+#   property :id, Serial
+#   property :content, Text, :required => true
+# end
+
+# DataMapper.finalize.auto_upgrade!
 
 get '/' do
   @title = "Comparative You"
@@ -15,7 +28,8 @@ get '/submit' do
 end
 
 post '/submit' do
-  "You said '#{params[:mantra]}'"
+  "You said '#{params[:mantra]}.'  Quite a good mantra."
+  #do i need to add some Mantra.new(params[:mantra] stuff here?)
 end
 
 get '/secret' do

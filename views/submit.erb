@@ -1,9 +1,8 @@
-<div class="content-wrapper">
-  <div class="content">
-    <h1><%= @title %></h1>
-    <p>Have you overcome a comparative attack?  Share your guiding mantra below</p>
-    <form action="/submit" method="post">
-      Enter your Mantra
+<div class="submit-container">
+  <div class="submit">
+    <h1 class='submit-head'>Have you overcome a comparative attack? <br/> Share your guiding mantra below</h1>
+    <form class='pure-form submit-mantra' action="/submit" method="post">
+      your mantra
     <input type="text" name="mantra">
     <input type="submit">
     </form>

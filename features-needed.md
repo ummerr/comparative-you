@@ -20,5 +20,7 @@
 
 ##Update 12/26
 
-#make the center text dynamic.
-#make the image dynamic.
+1. make the center text dynamic.
+2. make the image dynamic.
+3. design this first to see what your actual problem for sinatra is.
+4. couple of options...a text on screen generator
