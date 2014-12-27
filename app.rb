@@ -14,8 +14,27 @@ require 'sinatra'
 
 # DataMapper.finalize.auto_upgrade!
 
+class Mantra
+  attr_reader :text
+
+  def initialize(text)
+    @text = text
+  end
+end
+
+m1 = Mantra.new('Give yourself permission to be shit and learn')
+m2 = Mantra.new('No one can make you feel inferior without your consent.')
+m3 = Mantra.new('Get some fresh air and relax. Life is good.')
+
+mantras = [m1,m2,m3]
+pics = ["p1","p2","p3","p4","p5"]
+
+
 get '/' do
   @title = "Comparative You"
+  @mantra = mantras.shuffle.sample
+  @text = @mantra.text
+  @pic = pics.shuffle.sample
   erb :index
 end
 
@@ -28,8 +47,8 @@ get '/submit' do
 end
 
 post '/submit' do
-  "You said '#{params[:mantra]}.'  Quite a good mantra."
-  #do i need to add some Mantra.new(params[:mantra] stuff here?)
+  mantras << Mantra.new(params[:mantra])
+  "You said '#{params[:mantra]}.'  Quite a good mantra. #{ p mantras}"
 end
 
 get '/secret' do
@@ -43,5 +62,6 @@ end
 get '/decrypt/:secret' do
   params[:secret].reverse.downcase
 end
+
 
 #need to pass the secret message to the params hash in the last example above
