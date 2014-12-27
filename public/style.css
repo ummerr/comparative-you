@@ -205,6 +205,10 @@ a.pure-button-primary {
   margin: 0 auto;
 }
 
+.content h3 {
+  font-style: italic;
+}
+
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: white;
