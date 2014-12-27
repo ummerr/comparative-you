@@ -147,7 +147,7 @@ a.pure-button-primary {
 }
 
 .p2 {
-    background-image:url("http://i.imgur.com/dXLGjRk.jpg");
+    background-image:url("http://i.imgur.com/MJqwwTn.jpg");
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -171,7 +171,7 @@ a.pure-button-primary {
 }
 
 .p4 {
-    background-image:url("http://i.imgur.com/K9YQuQ0.jpg");
+    background-image:url("http://i.imgur.com/wm7rwbz.jpg");
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -209,7 +209,7 @@ a.pure-button-primary {
 .splash-head {
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: #6FBEF3;
     border: 3px solid white;
     padding: 1em 1.6em;
     font-weight: 100;
