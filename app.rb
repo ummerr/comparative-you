@@ -48,7 +48,9 @@ end
 
 post '/submit' do
   mantras << Mantra.new(params[:mantra])
-  "You said '#{params[:mantra]}.'  Quite a good mantra. #{ p mantras}"
+  @your_mantra = "Your mantra '#{params[:mantra]} has been added to our list."
+  erb :mantra_submitted
+  ##{ p mantras}
 end
 
 

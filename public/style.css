@@ -419,3 +419,8 @@ a.pure-button-primary {
     width: 50%;
     margin: 0 auto;
 }
+
+.submitted-mantra {
+    color: #6FBEF3;
+    text-decoration: none;
+}
