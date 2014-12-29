@@ -51,17 +51,6 @@ post '/submit' do
   "You said '#{params[:mantra]}.'  Quite a good mantra. #{ p mantras}"
 end
 
-get '/secret' do
-  erb :secret
-end
-
-post '/secret' do
-  "Your secret coded message is '#{params[:secret].reverse.upcase}'"
-end
-
-get '/decrypt/:secret' do
-  params[:secret].reverse.downcase
-end
 
 
 #need to pass the secret message to the params hash in the last example above
