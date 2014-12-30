@@ -1,18 +1,7 @@
 require 'sinatra'
-# require 'data_mapper'
-#shotgun sends this to port 9393
-
-
-# DataMapper skeleton code.  Read more!
-# DataMapper::setup(:default, "sqllite3://#{Dir.pwd}/recall.db")
-
-# class Mantra
-#   include DataMapper::Resource
-#   property :id, Serial
-#   property :content, Text, :required => true
-# end
-
-# DataMapper.finalize.auto_upgrade!
+require 'sinatra/activerecord'
+require './config/environments'
+require ‘./models/model.rb’#shotgun sends this to port 9393
 
 class Mantra
   attr_reader :text
