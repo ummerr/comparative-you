@@ -130,6 +130,13 @@ a.pure-button-primary {
     color: #AECFE5;
 }
 
+.nav-left-logo {
+    font-weight: bold;
+}
+
+.nav-left-logo a {
+    color: purple;
+}
 
 /*
  * -- SPLASH STYLES --
@@ -330,6 +337,15 @@ a.pure-button-primary {
         font-size: 250%;
     }
 
+    .faq {
+        width: 50%;
+        height: 50%;
+    }
+
+    .faq-head {
+        font-size: 250%;
+    }
+
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
@@ -349,6 +365,10 @@ a.pure-button-primary {
         font-size: 300%;
     }
 
+    .faq-head {
+        font-size: 300%
+    }
+
 }
 
 
@@ -360,6 +380,8 @@ a.pure-button-primary {
     display: block;
     position: relative;
     top: 4em;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .faq {
@@ -383,6 +405,14 @@ a.pure-button-primary {
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
+}
+
+.faq h4 {
+  text-align: left;
+}
+
+.faq p {
+  text-align: left;
 }
 
 
