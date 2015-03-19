@@ -1,7 +1,6 @@
 get '/' do
   @title = "Comparative You"
-  @mantra = mantras.shuffle.sample
-  @text = @mantra.text
+  @mantra = Mantra.all.shuffle.sample
   @pic = pics.shuffle.sample
   erb :index
 end
@@ -15,7 +14,7 @@ get '/submit' do
 end
 
 post '/submit' do
-  mantras << Mantra.new(params[:mantra])
+  Mantra.create(params[:mantra])
   @your_mantra = "Your mantra '#{params[:mantra]} has been added to our list."
   erb :mantra_submitted
   ##{ p mantras}
