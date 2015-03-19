@@ -14,8 +14,8 @@ get '/submit' do
 end
 
 post '/submit' do
-  Mantra.create(params[:mantra])
-  @your_mantra = "Your mantra '#{params[:mantra]} has been added to our list."
+  Mantra.create(mantra: "#{params[:mantra]}")
+  @your_mantra = "Your mantra #{params[:mantra]} has been added to our list."
   erb :mantra_submitted
   ##{ p mantras}
 end
