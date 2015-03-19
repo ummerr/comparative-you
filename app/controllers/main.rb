@@ -1,5 +1,5 @@
 get '/' do
-  @title = "Comparative You"
+  pics = ["p1","p2","p3","p4","p5"]
   @mantra = Mantra.all.shuffle.sample
   @pic = pics.shuffle.sample
   erb :index
