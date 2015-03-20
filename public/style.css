@@ -456,3 +456,7 @@ a.pure-button-primary {
     color: #6FBEF3;
     text-decoration: none;
 }
+
+.centered {
+    margin: 0 auto;
+}
