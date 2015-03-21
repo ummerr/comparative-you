@@ -460,3 +460,9 @@ a.pure-button-primary {
 .centered {
     margin: 0 auto;
 }
+
+form input {
+  width: 100%;
+  height: 3em;
+  font-size: 4em;
+}
